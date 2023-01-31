@@ -1,6 +1,11 @@
+// Adding Event listeners 
+
+const scissors = document.getElementById("scissors");
 
 
-// Rock Paper Scissors 
+scissors.addEventListener("click", function(){alert("Hello");
+})
+
 
 // 1. set values 
 let playerChoice = ""  
@@ -32,53 +37,53 @@ function computer(){
 
 
 // PLAY ONE ROUND FUNCTION
-function playRound(playerChoice, compChoice){
-    if (playerChoice == compChoice){
-        alert("Tie , both players played " + playerChoice); 
-    } else if (playerChoice == "rock" & compChoice =="scissors") {
-        alert("Player Wins, rock beats scissors!!");
-        playerWins += 1;
-        playerChoice = "reset"
+// function playRound(playerChoice, compChoice){
+//     if (playerChoice == compChoice){
+//         alert("Tie , both players played " + playerChoice); 
+//     } else if (playerChoice == "rock" & compChoice =="scissors") {
+//         alert("Player Wins, rock beats scissors!!");
+//         playerWins += 1;
+//         playerChoice = "reset"
     
-    } else if (playerChoice == "scissors" & compChoice =="paper") {
-        alert("Player Wins, scissors beats paper!!");
-        playerWins += 1;
+//     } else if (playerChoice == "scissors" & compChoice =="paper") {
+//         alert("Player Wins, scissors beats paper!!");
+//         playerWins += 1;
     
-    } else if (playerChoice == "paper" & compChoice == "rock") {
-        alert("Player Wins, paper beats rock!!");
-        playerWins += 1;
+//     } else if (playerChoice == "paper" & compChoice == "rock") {
+//         alert("Player Wins, paper beats rock!!");
+//         playerWins += 1;
         
-    } else if (compChoice == "rock" & playerChoice =="scissors") {
-        alert("Computer Wins, rock beats scissors!!");
-        compWins += 1;
+//     } else if (compChoice == "rock" & playerChoice =="scissors") {
+//         alert("Computer Wins, rock beats scissors!!");
+//         compWins += 1;
     
-    } else if (compChoice == "scissors" & playerChoice =="paper") {
-        alert("Computer Wins, scissors beats paper!!");
-        compWins += 1;
+//     } else if (compChoice == "scissors" & playerChoice =="paper") {
+//         alert("Computer Wins, scissors beats paper!!");
+//         compWins += 1;
         
-    } else if (compChoice == "paper" & playerChoice == "rock") {
-        alert("Computer Wins, paper beats rock!!");
-        compWins += 1;
+//     } else if (compChoice == "paper" & playerChoice == "rock") {
+//         alert("Computer Wins, paper beats rock!!");
+//         compWins += 1;
         
-    }
-}
+//     }
+// }
 
 // GAME OF FIVE ROUNDS-
-for (let i = 0; i < 5; i++){
-    player();
-    computer();
-    playRound(playerChoice, compChoice);
-    alert("Player Wins - " + playerWins + " Computer Wins - " + compWins);
-    if (i == 4){
-        if (playerWins > compWins){
-            alert("Player is the Winner!!");
-        } else if (playerWins == compWins){
-            alert("Game was a tie!!")
-        }else{
-            alert("Unlucky, the computer beat you!!");
-        }
-    }
-} 
+// for (let i = 0; i < 5; i++){
+//     player();
+//     computer();
+//     playRound(playerChoice, compChoice);
+//     alert("Player Wins - " + playerWins + " Computer Wins - " + compWins);
+//     if (i == 4){
+//         if (playerWins > compWins){
+//             alert("Player is the Winner!!");
+//         } else if (playerWins == compWins){
+//             alert("Game was a tie!!")
+//         }else{
+//             alert("Unlucky, the computer beat you!!");
+//         }
+//     }
+// } 
 
 
 
