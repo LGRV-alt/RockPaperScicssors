@@ -75,3 +75,9 @@
     display: flex;
     width: 200px;
 }
+
+.playerResults{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
