@@ -6,13 +6,27 @@
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href ="style.css">
+    <link href="https://fonts.cdnfonts.com/css/public-pixel" rel="stylesheet">
 </head>
 <body>
+    <!-- Heading -->
     <h1 class="header">Rock Paper Scissors</h1>
 
     <div class="main">
+        <!-- Modal Box? -->
+        <section class="modal hidden ">
+            <div class="flex">
+            </div>
+            <div>
+                <h3 id = "winnerResult">You lost, Skynet is one step closer</h3>
+                <p id="rpScore">-<span class="score lose">49</span><span>RP</span></p>
+            </div>
+            <button class="btn">Play Again</button>
+        </section>
+        <div class="overlay hidden"></div>
+       
+        <!-- Results of each round -->
         <div class = "info">
-            <p>Select either - Rock, Paper or Scissors</p>
             <p>First to score 5 wins</p>
             <p> <span id = "roundResult"></span></p>
         </div>
@@ -24,6 +38,7 @@
             </div>
 
             <div class = "compResults">
+                <div><h2>Computer played <span id="compChoice"> </span></h2></div>
                 <h2> Computer: <span id="compScore"></span></h2>
             </div>
         </div>
@@ -32,7 +47,11 @@
     <div class ="playerButtons">
         <button class = "pButton" id="rock"> Rock </button>
         <button class ="pButton" id="paper"> Paper </button>
-        <button class = "pButton" id="scissors"> Scissors </button>
+        <button class = "pButton" id="scissors"> Scissors</button>
+    </div>
+
+    <div class="footer">
+        <p> Copyright &copy 2023 GRV</p>
     </div>
 <script src="myscripts.js"></script>
 </body>
